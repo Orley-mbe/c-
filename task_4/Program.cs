@@ -6,31 +6,31 @@
 int Prompt(string message)
 {
     Console.WriteLine(message);
-    int number = Convert.ToInt32( Console.ReadLine());
+    int number = Convert.ToInt32(Console.ReadLine());
     return number;
 }
 
 
 bool Dayoff(int number)
 {
-  if(number > 8)
-  {
-    Console.WriteLine($"Это число не подходит ");
-    return false;
-  }
-    return true; 
+    if (number > 8)
+    {
+        Console.WriteLine($"Это число не подходит ");
+        return false;
+    }
+    return true;
 }
 
 int number = Prompt("Введите число обозначающее день недели ");
 
-if(Dayoff(number))
+if (Dayoff(number))
 {
-    if(number == 6 || number == 7)
+    if (number == 6 || number == 7)
     {
-         Console.WriteLine($"Сегодня {number} день недели - выходной");
+        Console.WriteLine($"Сегодня {number} день недели - выходной");
     }
     else
     {
-      Console.WriteLine("Это не выходной день ");  
+        Console.WriteLine("Это не выходной день ");
     }
 }

@@ -13,7 +13,7 @@ int Prompt(string message)
 int[] GetArr(int a)
 {
     int[] tempArr = new int[a];
-    for(int i =0; i <a;i++)
+    for (int i = 0; i < a; i++)
     {
         tempArr[i] = new Random().Next(1, 1000);
     }
@@ -22,10 +22,10 @@ int[] GetArr(int a)
 
 void printArr(int[] intArr)
 {
-    Console.Write(value:$"{intArr[0]}");
-    for(int i = 1; i < intArr.Length; i++)
+    Console.Write(value: $"{intArr[0]}");
+    for (int i = 1; i < intArr.Length; i++)
     {
-        Console.Write(value:$", {intArr[i]}");
+        Console.Write(value: $", {intArr[i]}");
     }
 }
 int a = Prompt("Введите длину массива: ");

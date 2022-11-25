@@ -54,9 +54,9 @@ void Runner()
     int minNum = Prompt("Введите минимальное число");
     int maxNum = Prompt("Введите максимальное число");
     double[] numbers = CreateArr(len, minNum, maxNum);
-    double result = NumDiff(numbers);
+    double result = NumDicdff(numbers);
     PrintArr(numbers);
-    System.Console.WriteLine(result);
+    System.Console.WriteLine($"{result:f2}");
 }
 
 Runner();

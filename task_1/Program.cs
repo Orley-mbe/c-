@@ -3,7 +3,7 @@
 //программу, которая покажет количество чётных чисел в
 //массиве.
 
-int[] CreateArr(int min = 100, int max=1000, int len=10)
+int[] CreateArr(int min = 100, int max = 1000, int len = 10)
 
 {
     int[] arr = new int[len];
@@ -16,16 +16,16 @@ int[] CreateArr(int min = 100, int max=1000, int len=10)
 
 }
 
-int  CountPositive(int[] arr)
+int CountPositive(int[] arr)
 {
     int count = 0;
-    foreach(var item in arr)
+    foreach (var item in arr)
     {
-        
-        if(item%2==0)
+
+        if (item % 2 == 0)
         {
             count++;
-        }  
+        }
     }
     return count;
 
@@ -33,7 +33,7 @@ int  CountPositive(int[] arr)
 
 void PrintArr(int[] arr)
 {
-    foreach(var item in arr)
+    foreach (var item in arr)
 
     {
         System.Console.WriteLine($"{item}");
@@ -43,10 +43,10 @@ void PrintArr(int[] arr)
 
 void Runner()
 {
-    int[] numbers=CreateArr();
+    int[] numbers = CreateArr();
     int result = CountPositive(numbers);
     PrintArr(numbers);
-    System.Console.WriteLine(result);
+    System.Console.WriteLine($"{result}");
 }
 
 Runner();

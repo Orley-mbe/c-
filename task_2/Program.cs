@@ -45,8 +45,10 @@ void Runner()
     double b2 = Prompt("Введите значение b2");
     double k2 = Prompt("Введите значение k2");
     double[] result = ExpressionSolution(b1, k1, b2, k2);
-    System.Console.WriteLine();
-    PrintArr(result);
+    double x = result[0];
+    double y = result[1];
+    System.Console.WriteLine($"Кординаты точек пересечения :({x}, {y})");
+    //PrintArr(result);
 }
 
 Runner();

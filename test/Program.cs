@@ -21,13 +21,13 @@ string[] NewArr(string[] arr)
     int i = 0;
     foreach (var item in arr)
     {
-        
-        if(item.Length<3)
+
+        if (item.Length < 3)
         {
             array[i] = item;
             i++;
         }
-        System.Console.Write($"{item}");
+        //System.Console.Write($"{item}");
     }
     return array;
 }
@@ -49,7 +49,7 @@ void PrintArr(string[] arr)
 {
     foreach (var item in arr)
     {
-        System.Console.Write($"{item}");
+        System.Console.Write($"{ item }");
     }
 }
 
